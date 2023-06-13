@@ -6,10 +6,40 @@
     <title>Ejemplo del DOM con JS</title>
 </head>
 <body>
-    <h1>Ejemplo DOM con js</h1>
-    <h2>saludosss.....</h2>
-    <script> 
-        console.log("saludando por la consola")
-        </script>
+    <h1 id="tittle1">Ejemplo DOM con java Script</h1>
+    <p>Saludos....</p>
+    <p>Saludoa</p>
+    <p>casa</p>
+    <p>dada</p>
+
+    <script>
+        let parrafos = document.getElementsByTagName('p');
+        console.log(`No. Parrafos: ${ parrafos.length}`);
+        for(let i = 0; i< parrafos.length; i++){
+            console.log(`${i} - ${ parrafos[i].innerHTML}`);
+        }
+    </script>
+    <!-- <h1 id="cabecera">Ejemplo DOM con java Script</h1>
+    <p id="parrafo">Saludos....</p>
+
+    <script>
+        let cabecero = document.getElementById('cabecera');
+        console.log('valor del elemento con id cabecera:'+ cabecero.innerHTML);
+        let parrafo = document.getElementById('parrafo');
+        console.log(`valor del parrafo: ${parrafo.innerHTML}`)
+    </script> -->
+
 </body>
 </html>
+
+/* y ban a pedir 4 notas
+
+nota 1: 15% 
+nota 2: 25%
+nota 3: 30%
+nota 4: 30% 
+
+
+nombre estudiante, la materia, la nota final y si aprobo o reprobo
+
+se aprueba con 3*/
